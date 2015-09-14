@@ -12,15 +12,21 @@ graph:
       kubernetes:
         - file://artifacts/kubernetes/postgres-pod.yaml
         - file://artifacts/kubernetes/postgres-service.yaml
+      docker-compose:
+        - file://artifacts/docker-compose/noop-compose.yaml
 
   - name: redis
     artifacts:
       kubernetes:
         - file://artifacts/kubernetes/redis-pod.yaml
         - file://artifacts/kubernetes/redis-service.yaml
+      docker-compose:
+        - file://artifacts/docker-compose/noop-compose.yaml
 
   - name: sentry
     artifacts:
       kubernetes:
         - file://artifacts/kubernetes/sentry-pod.yaml
         - file://artifacts/kubernetes/sentry-service.yaml
+      docker-compose:
+        - file://artifacts/docker-compose/sentry-compose.yaml
